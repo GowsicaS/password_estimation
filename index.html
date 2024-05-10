@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Estimation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="whole-container">
+        <div class="card">
+            <p class="main-heading">Password Strength Indicator</p>
+            <input type="password" id="pass" placeholder="Type Password">
+            <div class="indicator-wrapper">
+                <div class="indicator" id="weak"></div>
+                <div class="indicator" id="medium"></div>
+                <div class="indicator" id="strong"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var password = document.getElementById("pass").value
+        if(password.length < 4 && password.length != 0){
+            weak.style.backgroundColor = "red";
+        }
+        else if(password.length > 4){
+            medium.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
